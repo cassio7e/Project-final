@@ -1,10 +1,10 @@
-# Tamagotchi Discord Bot
+#  Tamagotchi Discord Bot
 
 Un bot Discord interactif développé en Python permettant à chaque membre d'un serveur d'adopter, d'élever et de prendre soin de son propre animal de compagnie virtuel (Tamagotchi) directement via des commandes Slash (`/`).
 
 
 
-## Fonctionnalités
+##  Fonctionnalités
 
 - **Adoption personnalisée** : Choisis ton animal parmi différentes espèces (Capybara, Chien, Chat Noir, Chauve-Souris...) et donne-lui un prénom.
 - **Gestion des jauges** : Surveille la faim, l'énergie, le bonheur et la propreté de ton animal.
@@ -13,22 +13,24 @@ Un bot Discord interactif développé en Python permettant à chaque membre d'un
 - **Sauvegarde persistante** : Toutes les données des joueurs et de leurs animaux sont enregistrées dans un stockage JSON structuré.
 
 
-## Commandes Slash disponibles
+
+##  Commandes Slash disponibles
+
+| Commande | Description |
+| :--- | :--- |
+| `/tamagotchi` | Adopte un nouveau compagnon virtuel. |
+| `/profil` | Affiche l'état complet, le niveau et les jauges de ton animal. |
+| `/nourrir` | Donne à manger à ton compagnon pour remonter sa faim. |
+| `/jouer` | Joue avec lui pour augmenter son bonheur. |
+| `/dormir` | Fais-le se reposer pour restaurer son énergie. |
+| `/laver` | Nettoie ton animal pour remonter sa propreté. |
+| `/kill` | Abandonne ton animal actuel pour pouvoir en adopter un nouveau. |
 
 
-| /tamagotchi | Adopte un nouveau compagnon virtuel. |
-| /profil | Affiche l'état complet, le niveau et les jauges de ton animal. |
-| /nourrir | Donne à manger à ton compagnon pour remonter sa faim. |
-| /jouer | Joue avec lui pour augmenter son bonheur. |
-| /dormir | Fais-le se reposer pour restaurer son énergie. |
-| /laver | Nettoie ton animal pour remonter sa propreté. |
-| /kill | Abandonne ton animal actuel pour pouvoir en adopter un nouveau. |
 
+##  Structure du Projet
 
-
-## Structure du Projet
-
-
+```
 Project-final/
 ├── main.py          # Point d'entrée du bot, synchronisation des commandes
 ├── orders.py        # Commandes slash du jeu (Cog) et boucle automatique
@@ -37,8 +39,7 @@ Project-final/
 ├── utils.py         # Fonctions utilitaires (jauges visuelles, calculs d'XP)
 ├── requirements.txt # Dépendances du projet
 └── images/          # Images associées aux animaux
-
-
+````
 ##  Guide d'Installation et de Lancement
 
 Suis ces étapes simples pour faire fonctionner le bot sur ton serveur Discord :
@@ -50,6 +51,6 @@ Suis ces étapes simples pour faire fonctionner le bot sur ton serveur Discord :
 
 ### 2. Télécharger le projet
 Ouvre ton terminal (ou invite de commande `cmd` / PowerShell) et clone le dépôt :
-
+```
 git clone https://github.com/ton-profil/Project-final.git
 cd Project-final
