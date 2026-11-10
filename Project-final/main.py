@@ -7,7 +7,8 @@ load_dotenv()
 
 #des intents par défaut suffisent pour les commandes slash et les boutons
 intents = discord.Intents.default()
-
+intents.message_content = True 
+intents.members = True 
 
 class MonBot(commands.Bot):
     def __init__(self):
